@@ -1,0 +1,11 @@
+[Unit]
+Description=RFID Read Service
+After=multi-user.target
+
+[Service]
+Environment=DISPLAY=:0
+Type=idle
+ExecStart=/home/pi/pi-rfid/read.py
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,7 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+
+/usr/bin/chromium-browser --kiosk --app=https://library.queenmargarets.com/cgi-bin/koha/sco/sco-main.pl
+
+@lxterminal -e /home/pi/pi-rfid/read.py
